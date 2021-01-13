@@ -17,4 +17,4 @@ deploy:
     branch: master
   local-dir: public
 notifications:
-  webhooks: https://oapi.dingtalk.com/robot/send?access_token=7b1638da1e236698ba5b292a38a8779c75010f04319d59c1d9b7cb8e404d8f05
+  webhooks: https://oapi.dingtalk.com/robot/send?access_token=a82ea449b07b6c7cae76e510b80bf3851c3ee06039378518d020c1e936cfea06
