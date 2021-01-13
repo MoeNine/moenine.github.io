@@ -1,16 +1,18 @@
 ---
 title: ThreadLocal
 date: 2021-01-12 11:39:39
-tags:
+tags:Java
 ---
 
-# ThreadLocal
+[toc]
+
+## 描述
 
 ThreadLocal能够允许我们存储只能被特定线程访问的数据
 
 
 
-##ThreadLocal接口
+## ThreadLocal接口
 
 以存储Integer类型的数据为例，首先创建一个ThreadLocal
 
@@ -18,14 +20,14 @@ ThreadLocal能够允许我们存储只能被特定线程访问的数据
 ThreadLocal<Integer> threadLocalValue = new ThreadLocal<>();
 ```
 
-可以通过get()或set()方法来操作这个值，我们可认为ThreadLocal是一个以线程作为Key 存储的数据作为Value的一个Map
+可以通过**get()**或**set()**方法来操作这个值，我们可认为ThreadLocal是一个以线程作为Key 存储的数据作为Value的一个Map
 
 ```java
 threadLocalValue.set(1);
 Integer result = threadLocalValue.get();
 ```
 
-也可以通过传一个Supplier给withinitial()这个静态方法来构造一个ThreadLocal
+也可以通过传一个Supplier给**withinitial()**这个静态方法来构造一个ThreadLocal
 
 ```java
 ThreadLocal<Integer> threadLocal = ThreadLocal.withInitial(() -> 1);
@@ -55,9 +57,9 @@ threadLocal.remove();
 
 ## 扩展ThreadPoolExecutor
 
-可以通过提供一个自定义的Hook在线程池中的线程执行任务的前后分别执行 beforeExecute() 和 afterExecute() 方法
+可以通过提供一个自定义的Hook在线程池中的线程执行任务的前后分别执行 **beforeExecute()** 和 **afterExecute()** 方法
 
-这样我们可以在afterExecute()方法中执行ThreadLocal的remove()方法
+这样我们可以在**afterExecute()**方法中执行ThreadLocal的**remove()**方法
 
 ```java
 public class ThreadLocalAwareThreadPool extends ThreadPoolExecutor {
