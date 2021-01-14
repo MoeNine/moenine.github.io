@@ -1,7 +1,7 @@
 ---
 title: 'Spring三种注入方法:@Autowired,@Resource和@Inject'
 date: 2021-01-12 11:51:26
-tags:Spring
+tags: Spring
 ---
 
 [toc]

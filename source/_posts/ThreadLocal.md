@@ -1,7 +1,7 @@
 ---
 title: ThreadLocal
 date: 2021-01-12 11:39:39
-tags:Java
+tags: Java
 ---
 
 [toc]
