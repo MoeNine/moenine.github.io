@@ -1,12 +1,8 @@
 ---
-title: arch_linux_starter
+title: Arch Linux 系统相关
 date: 2021-01-18 15:57:41
 tags: Linux
 ---
-
-# Arch Linux 系统相关
-
-
 
 ## 桌面
 

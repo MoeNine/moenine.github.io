@@ -1,10 +1,8 @@
 ---
-title: multi_thread_lock
+title: Synchronized和Lock的区别
 date: 2021-02-15 13:04:13
-tags: Java,Thread
+tags: [Java,Thread]
 ---
-
-# Synchronized和Lock的区别
 
 1. ##### 原始构成
 

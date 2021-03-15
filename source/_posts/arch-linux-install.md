@@ -1,10 +1,8 @@
 ---
-title: arch_linux_install
+title: Arch Linux软件安装
 date: 2021-01-19 13:02:20
 tags: Linux
 ---
-
-# ArchLinux软件安装
 
 将软件移动到/usr/bin 下 即可被DMenu检测到
 
