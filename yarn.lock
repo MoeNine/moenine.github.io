@@ -213,7 +213,6 @@
   dependencies:
     "anymatch" "~3.1.1"
     "braces" "~3.0.2"
-    "fsevents" "~2.3.1"
     "glob-parent" "~5.1.0"
     "is-binary-path" "~2.1.0"
     "is-glob" "~4.0.1"
@@ -614,6 +613,14 @@
   dependencies:
     "hexo-pagination" "1.0.0"
 
+"hexo-generator-feed@^3.0.0":
+  "integrity" "sha1-QSbvXjCCZMQlmfsO/a+I7RH6WZ4="
+  "resolved" "https://registry.npm.taobao.org/hexo-generator-feed/download/hexo-generator-feed-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "hexo-util" "^2.1.0"
+    "nunjucks" "^3.0.0"
+
 "hexo-generator-index@^2.0.0":
   "integrity" "sha1-FecfTSjunSFy4td+jR26BIgu3I8="
   "resolved" "https://registry.npm.taobao.org/hexo-generator-index/download/hexo-generator-index-2.0.0.tgz"
@@ -621,6 +628,15 @@
   dependencies:
     "hexo-pagination" "1.0.0"
     "timsort" "^0.3.0"
+
+"hexo-generator-sitemap@^2.1.0":
+  "integrity" "sha1-79k4BJ3b+alhoHf8xZR5GLpbITo="
+  "resolved" "https://registry.npm.taobao.org/hexo-generator-sitemap/download/hexo-generator-sitemap-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "hexo-util" "^2.1.0"
+    "micromatch" "^4.0.2"
+    "nunjucks" "^3.1.6"
 
 "hexo-generator-tag@^1.0.0":
   "integrity" "sha1-VOwj3pQJx1WE6oHjYFelkDGwIvE="
@@ -1047,14 +1063,13 @@
   "resolved" "https://registry.npm.taobao.org/normalize-path/download/normalize-path-3.0.0.tgz"
   "version" "3.0.0"
 
-"nunjucks@^3.2.1":
+"nunjucks@^3.0.0", "nunjucks@^3.1.6", "nunjucks@^3.2.1":
   "integrity" "sha1-RfkV/vD4n7qzjEidyFAl9khZ9GY="
   "resolved" "https://registry.npm.taobao.org/nunjucks/download/nunjucks-3.2.2.tgz?cache=0&sync_timestamp=1595221605986&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnunjucks%2Fdownload%2Fnunjucks-3.2.2.tgz"
   "version" "3.2.2"
   dependencies:
     "a-sync-waterfall" "^1.0.0"
     "asap" "^2.0.3"
-    "chokidar" "^3.3.0"
     "commander" "^5.1.0"
   optionalDependencies:
     "chokidar" "^3.3.0"
@@ -1133,8 +1148,6 @@
   "integrity" "sha1-07OWf31yRAaQSXZSqdQP8EYGfzM="
   "resolved" "https://registry.npm.taobao.org/prismjs/download/prismjs-1.23.0.tgz"
   "version" "1.23.0"
-  dependencies:
-    "clipboard" "^2.0.0"
   optionalDependencies:
     "clipboard" "^2.0.0"
 
@@ -1536,7 +1549,6 @@
   "version" "2.8.29"
   dependencies:
     "source-map" "~0.5.1"
-    "uglify-to-browserify" "~1.0.0"
     "yargs" "~3.10.0"
   optionalDependencies:
     "uglify-to-browserify" "~1.0.0"
