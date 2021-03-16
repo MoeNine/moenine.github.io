@@ -98,17 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: artemis
-theme_config:
-  logo:
-  copyright:
-    since: 2020
-    name: Porfirio Lau
-    url: https://moenine.cn
-  menu:
-    Home: /
-    About: /about
-    GitHub: https://github.com/MoeNine
+theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
